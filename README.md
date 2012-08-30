@@ -1,0 +1,4 @@
+jLeftClick
+==========
+
+jQuery leftclick plugin
