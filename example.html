@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>leftClick</title>
+    <meta charset="utf-8"/>
+    <script src="jquery.js"></script>
+    <script src="jLeftClick.js"></script>
+    <script src="leftclick_test.js"></script>
+    <style>
+        <!--
+            * {padding:0;margin:0}
+            body {font:12px/18px sans-serif}
+            a {color:#ff9000;text-decoration: none}
+            .container {padding:20px}
+            .page-controls {
+                padding:5px;
+                border:1px solid #888;
+                width:200px;
+                text-align:center;
+                margin-bottom:20px;
+                background-color:#eee;
+            }
+            .page-controls a {font-weight: bold}
+
+            .click {
+                cursor: pointer;
+                width:100px;
+                height:100px;
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                margin: 0 10px 10px 0;
+                padding: 10px;
+                position: relative;
+                border-radius: 10px;
+            }
+
+            .click a {
+                position: absolute;
+                bottom: 8px;
+                right: 10px;
+                font-size: 10px;
+                text-decoration: underline;
+            }
+
+            .click-on-delegate {background: #0bbdd2}
+            .click-on-delegate a, .click-on-delegate {color: #fff}
+            .click-on {background: #ccff00}
+            .click-on a, .click-on {color: #fff}
+            .click-one-delegate {background: #e13a13}
+            .click-one-delegate a,.click-one-delegate {color: #fff}
+            .click-one {background: #c613e1}
+            .click-one a,.click-one {color: #fff}
+            .click-delegate {background: #2e2e2e}
+            .click-delegate a,.click-delegate {color: #fff}
+            .click-live {background: #eee}
+            .click-live a, .click-live {color: #888}
+            .click-bind {background: #00f812}
+            .click-bind a, .click-bind {color: #fff}
+
+            .click-disabled {
+                opacity: .3;
+                filter:alpha(opacity=30);
+                color: #444;
+                cursor: default;
+            }
+
+            .click-disabled a {
+                display: none;
+            }
+        -->
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-test-area">
+        </div>
+    </div>
+</body>
+</html>
