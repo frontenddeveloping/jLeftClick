@@ -8,7 +8,7 @@
 
         handle: function (event) {
             var originalEvent = event.originalEvent,
-                isIE = $.browser.msie,
+                isIE = /*@cc_on!@*/false,
                 type = event.type,
                 result;
             if (

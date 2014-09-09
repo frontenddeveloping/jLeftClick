@@ -61,10 +61,6 @@ $(function(){
                                     eventContainer = TEST_AREA;
                                     selector = '.click-'+type;
                                     break;
-            case 'live' :
-                                    disableMethod = 'die';
-                                    eventContainer = parent;
-                                    break;
             case 'bind' :
                                     disableMethod = 'unbind';
                                     eventContainer = parent;
@@ -86,8 +82,6 @@ $(function(){
              .one('leftclick','.click-one-delegate a',{type:'one-delegate'},disableLeftClick)
              .delegate('.click-delegate','leftclick',{type:'delegate'},enableLeftClick)
              .delegate('.click-delegate a','leftclick',{type:'delegate'},disableLeftClick);
-    $('.click-live').live('leftclick',{type:'live'},enableLeftClick);
-    $('.click-live a').live('leftclick',{type:'live'},disableLeftClick);
     //END DELEGATE TEST HANDLERS
 
     //GENERATE HANDLERS
@@ -117,9 +111,6 @@ $(function(){
     function createDelegateContent(elementsNumbers){
         createContent(elementsNumbers,'delegate');
     }
-    function createLiveContent(elementsNumbers){
-        createContent(elementsNumbers,'live');
-    }
     function createOnNonDelegateContent(elementsNumbers){
         createContent(elementsNumbers,'on');
         $('.click-on').on('leftclick',{type:'on'},enableLeftClick)
@@ -145,7 +136,6 @@ $(function(){
     createOneDelegateContent(elementsOnPage);
     createOneNonDelegateContent(elementsOnPage);
     createDelegateContent(elementsOnPage);
-    createLiveContent(elementsOnPage);
     createBindContent(elementsOnPage);
 
 });
